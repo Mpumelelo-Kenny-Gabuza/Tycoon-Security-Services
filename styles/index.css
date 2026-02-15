@@ -1,0 +1,424 @@
+:root {
+    --primary-color: #1F5A8A;
+    --secondary-color: #BAC8D3;
+    --tertiary-color: #55585C;
+    --text-color: #FFF;
+}
+/* Animations */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* HERO SECTION */
+.intro {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.hero-container {
+    background-image: url("https://acessecurity.co.za/");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-para {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 8.8rem;
+    color: var(--tertiary-color);
+    text-align: left;
+}
+.intro {
+    margin-left: 8.8rem;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        margin-left: 0;
+    }
+    .hero-para {
+        margin-left: 0;
+    }
+    .hero-img {
+        display: none;
+    }
+}
+
+.hero-btns {
+    margin-left: 8.7rem;
+}
+
+
+.btn:hover {
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border: var(--primary-color) 1px solid;
+}
+
+.btn-enqueries {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+    padding: 8px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.btn-enqueries:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.card {
+    margin-top: 2rem;
+    background: linear-gradient(to right, var(--secondary-color), var(--text-color));
+    width: auto;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.about-tycoon {
+    letter-spacing: 0.3px;
+    font-size: 1.2rem;
+}
+
+/* SERVICES */
+.services {
+    background: var(--secondary-color);
+}
+
+.service-heading {
+    margin-left: 6rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.service-para {
+    margin-left: 6rem;
+    font-size: 1rem;
+    color: var(--tertiary-color);
+}
+
+.services-section {
+    /* background-color: #f8fafc; */
+    /* padding: 80px 0; */
+}
+
+/* Custom Tabs Styling */
+.service-tabs {
+    border-bottom: 1px solid #dee2e6;
+    margin: 10px 0 20px;
+    padding-bottom: 0;
+}
+
+.service-tabs .nav-link {
+    color: #495057;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    position: relative;
+    background: transparent;
+    font-size: 16px;
+}
+
+.service-tabs .nav-link.active {
+    color: var(--primary-color);
+    background: transparent;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.service-tabs .nav-link:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Service Cards */
+.service-card {
+    max-height: 25rem;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    background: white;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(13, 110, 253, 0.15);
+}
+
+.card-image-container {
+    height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .card-image-container img {
+    transform: scale(1.05);
+}
+
+.service-card .card-body {
+    padding: 24px;
+}
+
+.service-card .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.service-card .card-text {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.learn-more:hover {
+    color: var(--primary-color);
+    gap: 12px;
+}
+
+.learn-more i {
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .service-tabs .nav-link {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Eye In The Sky Section */
+.drone-title {
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.drone-list {
+    list-style: disc;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+}
+
+.drone-container {
+    background: linear-gradient(to right, var(--primary-color), var(--tertiary-color));
+    padding-bottom: 1.1rem;
+}
+
+.drone-btn {
+    margin-left: 5rem;
+    background: var(--text-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--tertiary-color);
+}
+
+.why-choose-section {
+    /* color: var(--tertiary-color); */
+    padding: 30px 0;
+    margin: 8px 0;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    height: 1px;
+    background-color: #ffc107;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.value-item {
+    margin-bottom: 20px;
+    padding-left: 34px;
+    position: relative;
+}
+
+.value-item::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffc107;
+    font-size: 16px;
+}
+
+.value-title {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* .value-description {
+    color: #cbd5e0;
+    line-height: 1.4;
+    font-size: 16px;
+} */
+
+@media (max-width: 768px) {
+    .why-choose-section {
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    /* padding: 80px 0; */
+    background-color: #f8fafc;
+}
+
+.contact-card {
+    height: 100%;
+}
+
+.quote-card {
+    padding: 0 60px;
+    height: 100%;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--tertiary-color)
+}
+
+.quote-card .section-title {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 600;
+    color: #0a1c2f;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    margin-bottom: 2rem;
+}
+
+/* Quote List Styles */
+.quote-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.quote-list li {
+    padding: 10px 0;
+    padding-left: 35px;
+    position: relative;
+    font-size: 16px;
+}
+
+.quote-list li:last-child {
+    border-bottom: none;
+}
+
+.quote-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #ffc107;
+}
+
+.quote-btn {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .contact-card,
+    .quote-card {
+        padding: 30px;
+    }
+}

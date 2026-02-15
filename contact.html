@@ -10,13 +10,15 @@
     <!-- FONTAWESOME CDN -->
     <script src="https://kit.fontawesome.com/f35d4106a4.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/contact.css">
     <link rel="stylesheet" href="./styles/base.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
@@ -96,8 +98,115 @@
         </div>
     </nav>
 
-    <div class="homepage text-center" style="margin: 8rem;">
-        Contact
+    <div class="careers-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Get In Touch </h1>
+            <p>Let's talk about your securty, OHS & janitorial needs</p>
+        </div>
+    </div>
+
+    <!-- Emergency Banner -->
+    <div class="container" data-aos="fade-up">
+        <div class="emergency-premium d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <div>
+                <h3><i class="fas fa-exclamation-triangle me-2"></i> 24/7 Emergency Response</h3>
+                <p class="mb-0 opacity-75">Immediate armed response & security incident assistance</p>
+            </div>
+            <div class="mt-4 mt-lg-0">
+                <a href="tel:+27861234567" class="emergency-number-premium">
+                    <i class="fas fa-phone-alt me-2"></i> 086 123 4567
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Contact Form -->
+    <div class="container">
+        <div class="premium-form-container" data-aos="fade-up">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="subtitle" style="color: var(--secondary);">Get in touch</span>
+                    <h2
+                        style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 800; color: var(--primary); margin-bottom: 25px;">
+                        We're here to help</h2>
+                    <p style="color: var(--gray-500); line-height: 1.8; margin-bottom: 30px;">Whether you need security,
+                        cleaning, or OHS services, our team is ready to provide a comprehensive solution tailored to
+                        your specific requirements.</p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; margin-right: 15px;">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h6 style="font-weight: 700; color: var(--primary);">Free consultation</h6>
+                            <p style="color: var(--gray-500); margin: 0;">No obligation assessment</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div
+                            style="width: 50px; height: 50px; background: var(--secondary); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; margin-right: 15px;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h6 style="font-weight: 700; color: var(--primary);">Quick response</h6>
+                            <p style="color: var(--gray-500); margin: 0;">Within 4 business hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form class="premium-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Full name</label>
+                                <input type="text" class="form-control" placeholder="John Doe">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Company</label>
+                                <input type="text" class="form-control" placeholder="Company name">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="[email protected]">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="+27 XX XXX XXXX">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Service required</label>
+                            <select class="form-select">
+                                <option>Select a service</option>
+                                <option>Security Services</option>
+                                <option>Surveillance & Technology</option>
+                                <option>Armed Response</option>
+                                <option>Janitorial & Cleaning</option>
+                                <option>Facility Maintenance</option>
+                                <option>Occupational Health & Safety</option>
+                                <option>Specialized Operations</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5"
+                                placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="premium-btn mt-3">SEND MESSAGE <i
+                                class="fas fa-paper-plane ms-2"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer Section -->
@@ -164,5 +273,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+
+        // Form handling
+        document.querySelector('.premium-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for contacting us. Our team will respond within 4 hours.');
+            this.reset();
+        });
+    </script>
 </body>
+
 </html>

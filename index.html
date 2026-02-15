@@ -10,13 +10,15 @@
     <!-- FONTAWESOME CDN -->
     <script src="https://kit.fontawesome.com/f35d4106a4.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/base.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
@@ -25,7 +27,7 @@
 
 <body>
     <!-- CONTACT SECTION -->
-    <div class="banner container-fluid py-2">
+    <div class="banner container-fluid py-2 d-none d-md-block">
         <div class="row">
             <div class="col-md-4 contact-column fade-in-up">
                 <div class="contact-icon">
@@ -42,7 +44,7 @@
 
             <div class="col-md-4 contact-column fade-in-up">
                 <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i><a href="#">20 Bokmakierie Cresent Douglasdale</a>
+                    <i class="fas fa-map-marker-alt"></i><a href="#location">20 Bokmakierie Cresent Douglasdale</a>
                 </div>
             </div>
         </div>
@@ -96,13 +98,527 @@
         </div>
     </nav>
 
-    <div class="homepage text-center" style="margin: 8rem;">
-        Landing Page
+    <div class="container-fluid hero-container py-2 fade-in-up">
+        <div class="row">
+            <div class="col-md-8">
+                <h6 class="text-center" style="color: #878a8d; font-weight: bold;">Security & Cleaning Services</h6>
+                <h1 class="intro">Uncompromised Safety, Immaculate Spaces</h1>
+                <p class="hero-para">Simplify your operations with a single, trusted partner for
+                    comprehensive
+                    Security, Janitorial and
+                    Medical solutions. We deliver tailored protection, meticulous cleanliness and rapid health
+                    support,
+                    ensuring your workplace remains a safe compliant, and pristine environment.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-contact">What We Do</button>
+                    <button class="btn-enqueries">Enqueries</button>
+                </div>
+            </div>
+            <div class="col-md-4 hero-img">
+                <img src="assets/Security_Guard_2-removebg-preview.png" alt="" width="280">
+            </div>
+        </div>
     </div>
+
+    <div class="container py-2 fade-in-up">
+        <div class="row g-4">
+
+            <!-- Column 1: Security Card -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt fa-1x mb-3"></i>
+                        <h4 class="card-title">Security</h4>
+                        <p class="card-text text-muted">Protect your home and business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Medical Solutions Card -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-heartbeat fa-1x mb-3"></i>
+                        <h4 class="card-title">Occupational Health</h4>
+                        <p class="card-text text-muted">Quality care & safety tailored for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Janitorial Card -->
+            <div class="col-md-4">
+                <div class="card text-center p-4 shadow-sm border-0">
+                    <div class="card-body">
+                        <i class="fas fa-broom fa-1x mb-3"></i>
+                        <h4 class="card-title">Janitorial</h4>
+                        <p class="card-text text-muted">Expert cleaning for your space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="about-tycoon">Tycoon Security, Medical Solutions & Janitorial Service is a South African based
+                    entity with a pan African reach and global ambition.
+                    Tycoon Solutions prides itself in being a quality and professionally driven provider in the security
+                    industry. It is well represented across South Africa. Our structure enables a smooth
+                    integration across South Africa providing standard services regardless of geological location of a
+                    client
+                </p>
+                <p class="about-tycoon">Tycoon Security, Medical Solutions & Janitorial Services is part of Mlifi
+                    Holdings group of companies.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid services py-4">
+        <div class="row" data-aos="fade-up">
+            <div class="col-md-12">
+                <h2 class="service-heading">Tycoon Security, Janitorial & Medical Solutions Services</h2>
+                <p class="service-para">We offer the best securing services to make sure your property is always sucured
+                </p>
+            </div>
+        </div>
+
+        <section class="services-section" data-aos="fade-up">
+            <div class="container">
+
+                <!-- Horizontal Tabs: 3 Sub-Service Categories -->
+                <ul class="nav service-tabs" id="serviceTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="security-tab" data-bs-toggle="tab"
+                            data-bs-target="#security" type="button" role="tab">
+                            SECURITY SERVICES
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="surveillance-tab" data-bs-toggle="tab"
+                            data-bs-target="#surveillance" type="button" role="tab">
+                            SURVEILLANCE & TECHNOLOGY
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specialised-tab" data-bs-toggle="tab" data-bs-target="#specialised"
+                            type="button" role="tab">
+                            SPECIALISED OPERATIONS
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="facility-tab" data-bs-toggle="tab" data-bs-target="#facility"
+                            type="button" role="tab">
+                            FACILITY MAINTENANCE & CLEANING
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="serviceTabContent">
+                    <!-- SURVEILLANCE & TECHNOLOGY Tab (Active by default) -->
+                    <div class="tab-pane fade show active" id="security" role="tabpanel">
+                        <!-- General Description of the service category -->
+                        <div class="category-description">
+                            <h4 class="fw-bold mb-3">Advanced Surveillance & Security Technology</h4>
+                            <p class="text-muted mb-0" style="font-size: 18px; line-height: 1.7;">
+                                Comprehensive security technology solutions including CCTV, access control,
+                                alarm systems, and smart surveillance tailored to protect your assets 24/7.
+                                Our cutting-edge technology ensures real-time monitoring and rapid incident response.
+                            </p>
+                        </div>
+
+                        <!-- 3 Service Cards (as shown in image) -->
+                        <div class="row g-4">
+
+                            <!-- Card 1: Armed & Rapid Response -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://images.unsplash.com/photo-1748950363681-8f1eb9b416f7?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="Armed Response">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Armed & Rapid Response</h5>
+                                        <p class="card-text">
+                                            Immediate armed intervention for alarm activations.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: General & Events Guarding -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://images.unsplash.com/photo-1652739758426-56a564265f9e?q=80&w=363&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="Events Guarding">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">General & Events Guarding</h5>
+                                        <p class="card-text">
+                                            Professional security personnel for corporate events, concerts, and private
+                                            functions.
+                                            Crowd management and access control.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Construction & Industrial Site Security -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://images.unsplash.com/photo-1575261569688-399dd464cd13?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="Construction Site Security">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Construction & Industrial Site Security</h5>
+                                        <p class="card-text">
+                                            Specialized security for construction sites, warehouses, and industrial
+                                            facilities.
+                                            Theft prevention and perimeter protection.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4: Emergency Guarding -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://img.freepik.com/premium-photo/red-blue-light-flasher_220873-3074.jpg?semt=ais_hybrid&w=740&q=80"
+                                            alt="Construction Site Security">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emergency Guarding</h5>
+                                        <p class="card-text">
+                                            Specialized security for construction sites, warehouses, and industrial
+                                            facilities.
+                                            Theft prevention and perimeter protection.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5: Electric Fence Installation & Maintenance -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBm0jz9KQOl6w1R0CcCvEzldK9itlHrduW3g&s"
+                                            alt="Electric Fence">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Electric Fence Installation & Maintenance</h5>
+                                        <p class="card-text">
+                                            Perimeter security solutions.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SURVEILLANCE & TECHNOLOGY Tab -->
+                    <div class="tab-pane fade" id="surveillance" role="tabpanel">
+
+                        <!-- General Description of the service category -->
+                        <div class="category-description">
+                            <h4 class="fw-bold mb-3">Advanced Surveillance & Security Technology</h4>
+                            <p class="text-muted mb-0" style="font-size: 18px; line-height: 1.7;">
+                                Comprehensive security technology solutions including CCTV, access control,
+                                alarm systems, and smart surveillance tailored to protect your assets 24/7.
+                                Our cutting-edge technology ensures real-time monitoring and rapid incident response.
+                            </p>
+                        </div>
+
+                        <!-- Service Cards -->
+                        <div class="row g-4 py-4">
+
+                            <!-- Card 1: CCTV Inspection -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://images.unsplash.com/photo-1708807472445-d33589e6b090?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="CCTV Inspection">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">CCTV Inspection & Monitoring</h5>
+                                        <p class="card-text">
+                                            Live camera oversight and system audits.
+                                        </p>
+                                        <a href="#" class="learn-more">
+                                            Learn more <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SPECIALISED OPERATIONS Tab -->
+                    <div class="tab-pane fade" id="specialised" role="tabpanel">
+                        <div class="category-description">
+                            <h4 class="fw-bold mb-3">Specialised Operations & Tactical Solutions</h4>
+                            <p class="text-muted mb-0" style="font-size: 18px; line-height: 1.7;">
+                                Highly trained tactical teams for high-risk environments, VIP protection,
+                                and specialized security operations. Discreet, professional, and fully equipped.
+                            </p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://www.heavyhaulers.com/images/stock/pilot-car-2.webp"
+                                            alt="VIP Protection">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Escort & Truck Escorts</h5>
+                                        <p class="card-text">
+                                            Secure transportation of assets or high-value goods.
+                                        </p>
+                                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://cleanmanagement.com/wp-content/uploads/2019/09/spill-cleanups.jpg"
+                                            alt="K9 Units">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hazardous / Chemical Spills</h5>
+                                        <p class="card-text">
+                                            Containment, removal, and decontamination.
+                                        </p>
+                                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FACILITY MAINTENANCE & CLEANING Tab -->
+                    <div class="tab-pane fade" id="facility" role="tabpanel">
+                        <div class="category-description">
+                            <h4 class="fw-bold mb-3">Facility Maintenance & Cleaning</h4>
+                            <p class="text-muted mb-0" style="font-size: 18px; line-height: 1.7;">
+                                Complete facility management solutions including janitorial services, deep cleaning,
+                                and preventive maintenance for commercial and industrial properties.
+                            </p>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341314717/UC/VR/KX/77960970/industrial-deep-cleaning-services.jpg"
+                                            alt="Industrial Cleaning">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Industrial Deep Cleaning</h5>
+                                        <p class="card-text">
+                                            Heavy-duty cleaning for factories, warehouses, and industrial facilities.
+                                        </p>
+                                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://tempstaffinginc.com/wp-content/uploads/2023/11/hire-a-janitor.jpg"
+                                            alt="Office Cleaning">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">General Janitorial</h5>
+                                        <p class="card-text">
+                                            Daily and weekly cleaning services for corporate offices and retail spaces.
+                                        </p>
+                                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card service-card">
+                                    <div class="card-image-container">
+                                        <img src="https://meticulositycleaning.com/wp-content/uploads/2026/01/What-Does-Post-Construction-Cleaning-Include.webp"
+                                            alt="Hygiene Services">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Post-Construction Cleaning</h5>
+                                        <p class="card-text">
+                                            Deep cleaning after building/renovation
+                                        </p>
+                                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="container py-4" style="font-size: 1.2rem;" >
+            <p>Are You Ready To Secure Your Property? <br>
+                Contact Tycoon Security today for a <span style="color: #1F5A8A; font-weight: bold;">Free Qoute</span>
+                on the state-of-the-art solutions </p>
+        </div>
+    </section>
+
+    <section class="container-fluid drone-container">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-4">
+                <div class="service-image">
+                    <img class="" src="assets/Drone.jpg" alt="Drone Image" width="500">
+                </div>
+            </div>
+            <div class="col-md-8 px-5">
+                <div class="service-outline px-5 m-2">
+                    <h1 class="drone-title">Eye In The Sky-Drone Inspection</h1>
+
+                    <ul class="drone-list">
+                        <li>Data processing to create 2D and 3D images.</li>
+                        <li>Detailed reports of the industrial or commercial asset condition including annotations,
+                            inspector comments, and recommendations.</li>
+                        <li>Refinery and Storage Tank Inspections.</li>
+                        <li>Flare Stacks and Chimneys Inspections.</li>
+                        <li>Oil & Gas Pipeline Monitoring.</li>
+                        <li>Safer & Faster Oil, Gas, and Petrochemical Inspections.</li>
+                        <li>Roving patrol services within a defined parameter.</li>
+                    </ul>
+                </div>
+                <a class="drone-btn" href="">Learn More</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="why-choose-section" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="section-title" style="color: #e9e2e2;">Why Choose Tycoon Security</h2>
+
+                <ul class="values-list">
+                    <!-- Item 1: Integrity -->
+                    <li class="value-item">
+                        <div class="value-title">Integrity in doing the right thing all the time</div>
+                        <!-- <div class="value-title">
+                            Relevant and real – keeping in-touch with the latest guarding technics and technology
+                        </div> -->
+                    </li>
+
+                    <li class="value-item">
+                        <div class="value-title">Relevant and real – keeping in-touch with the latest guarding technics
+                            and technology</div>
+                        <!-- <div class="value-title">
+                            Relevant and real – keeping in-touch with the latest guarding technics and technology
+                        </div> -->
+                    </li>
+
+                    <!-- Item 2: Ethical + Deliver on promise -->
+                    <li class="value-item">
+                        <div class="value-title">Ethical in how we do and conduct our business.</div>
+                        <!-- <div class="value-description">
+                            Deliver on our promise to the clients.
+                        </div> -->
+                    </li>
+
+                    <li class="value-item">
+                        <div class="value-title"> Deliver on our promise to the clients.</div>
+                        <!-- <div class="value-description">
+                            Deliver on our promise to the clients.
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- LEFT COLUMN: Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <h2 class="section-title">Contact Us Today</h2>
+                        <p class="sub-heading">Learn more about how our business can bring a solutions to your
+                            organization</p>
+
+                        <form>
+                            <!-- Email Address -->
+                            <div>
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control" placeholder="name@example.com" value="">
+                            </div>
+
+                            <!-- Full Name -->
+                            <div>
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="e.g. John Doe">
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div>
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="+27">
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label class="form-label">Message</label>
+                                <textarea class="form-control"
+                                    placeholder="Type your message here">Type your message here</textarea>
+                            </div>
+                            <a class="quote-btn btn btn-primary" href="http://" target="_blank"
+                                rel="noopener noreferrer">Request a Quote</a>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: Request a Free Quote -->
+                <div class="col-lg-6" id="location">
+                    <div class="quote-card">
+                        <h2 class="section-title">Request a free Quote</h2>
+
+                        <ul class="quote-list">
+                            <li>Dedication to the Safety and security of our clients.</li>
+                            <li>Keeping abreast on the latest and greatest when it comes to guarding and guarding.</li>
+                        </ul>
+                        <div class="business-location container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.110223464208!2d27.99163196658649!3d-26.02838363175447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576990386797f%3A0x3a4f36574d954bfb!2s20%20Bokmakierie%20Cres%2C%20Fourways%2C%20Sandton%2C%202055!5e0!3m2!1sen!2sza!4v1770997784667!5m2!1sen!2sza"
+                                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><br>
+
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
+        <div class="container py-4">
             <div class="row gy-5">
 
                 <!-- Column 1: Logo + Social Icons -->
@@ -112,14 +628,14 @@
                         Professional security solutions tailored to your needs.
                     </p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;
+                        <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;
+                        <a href="#"><i class="fab fa-instagram"></i></a>&nbsp;
                     </div>
                 </div>
 
-                <!-- Column 2: Quick Links-->
+                <!-- Column 2: Quick Links -->
                 <div class="col-lg-3 col-md-6">
                     <h5 class="footer-heading" style="padding-left: 1.8rem;">Quick Links</h5>
                     <ul class="footer-links">
@@ -164,8 +680,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap & AOS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/[email protected]/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50
+        });
+    </script>
 </body>
 
-
 </html>
-

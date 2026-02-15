@@ -10,7 +10,7 @@
     <!-- FONTAWESOME CDN -->
     <script src="https://kit.fontawesome.com/f35d4106a4.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/careers.css">
     <link rel="stylesheet" href="./styles/base.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -95,75 +95,188 @@
             </div>
         </div>
     </nav>
+    </head>
 
-    <div class="homepage text-center" style="margin: 8rem;">
-        Careers
-    </div>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row gy-5">
-
-                <!-- Column 1: Logo + Social Icons -->
-                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="footer-logo">TYCOON <span>SECURITY</span></a>
-                    <p style="color: #55585C; margin-top: 15px; font-size: 14px;">
-                        Professional security solutions tailored to your needs.
-                    </p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-
-                <!-- Column 2: Quick Links-->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-heading" style="padding-left: 1.8rem;">Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="about_tycoon.html">About Tycoon Security</a></li>
-                        <li><a href="#">Security Services</a></li>
-                        <li><a href="#">OHS Services</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Our Services -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-heading" style="padding-left: 1.8rem;">Our Services</h5>
-                    <ul class="footer-links">
-                        <li><a href="#">Security Services</a></li>
-                        <li><a href="#">Surveillance & Technology</a></li>
-                        <li><a href="#">Specialized Operations</a></li>
-                        <li><a href="#">Facility Maintanence & Cleaning</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Contact Us -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-heading">Contact Us</h5>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone-alt"></i> 072 535 3624</p>
-                        <p><i class="fas fa-envelope"></i> thembela@tycoonsecurity.co.za</p>
-                        <p><i class="fas fa-map-marker-alt"></i> 20 Bokmakierie Crescent,<br>Douglasdale, 2191</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="footer-bottom text-center">
-                <p>&copy; 2026 Tycoon Security, Janitorial & Medical Solutios | All rights reserved.</p>
+    <body>
+        <!-- FULL WIDTH HERO IMAGE SECTION -->
+        <div class="careers-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Take your first step in your career journey with Tycoon Security, Janitorial & Medical Solutions</h1>
+                <p>where your skills and passion for safety and cleaning will make a real difference</p>
+                <!-- <a href="#jobCardsContainer" class="btn">VIEW OPEN POSITIONS</a> -->
             </div>
         </div>
-    </footer>
 
-    <!-- BOOTSTRAP CDN SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
+        <section class="careers-section">
+            <div class="container">
+
+                <!-- Job Cards Container -->
+                <div class="row g-4" id="jobCardsContainer">
+                    <!-- Jobs will be dynamically loaded from JSON -->
+                </div>
+
+                <!-- Application Form Section (hidden initially) -->
+                <div class="application-form" id="applicationForm" style="display: none;">
+                    <h2 class="form-title" id="applicationJobTitle">Apply for <span></span></h2>
+                    <form id="jobApplicationForm">
+                        <input type="hidden" id="applyingForJobId">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" placeholder="[email protected]" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="+27 XX XXX XXXX" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">ID/Passport Number</label>
+                                <input type="text" class="form-control" placeholder="e.g. 900101 5084 089" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label">Highest Qualification</label>
+                                <select class="form-select" required>
+                                    <option value="">Select...</option>
+                                    <option>Grade 12 / Matric</option>
+                                    <option>Certificate</option>
+                                    <option>Diploma</option>
+                                    <option>Degree</option>
+                                    <option>Postgraduate</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Years of Experience</label>
+                                <select class="form-select" required>
+                                    <option value="">Select...</option>
+                                    <option>0-1 years</option>
+                                    <option>1-3 years</option>
+                                    <option>3-5 years</option>
+                                    <option>5-10 years</option>
+                                    <option>10+ years</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="file-upload">
+                            <i class="fas fa-cloud-upload-alt fa-3x text-primary mb-3"></i>
+                            <h5>Upload Required Documents</h5>
+                            <p class="text-muted mb-3">CV/Resume • ID Copy • Certificates • PSIRA Registration (if
+                                applicable)</p>
+                            <input type="file" class="form-control" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                                required>
+                            <small class="text-muted">Max file size: 10MB each</small>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I confirm that the information provided is true and correct
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">SUBMIT APPLICATION</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Job Details Modal -->
+        <div class="modal fade" id="jobDetailsModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalJobTitle">Job Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalJobDetails">
+                        <!-- Dynamic content will be inserted here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="modalApplyBtn">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row gy-5">
+
+                    <!-- Column 1: Logo + Social Icons -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="#" class="footer-logo">TYCOON <span>SECURITY</span></a>
+                        <p style="color: #55585C; margin-top: 15px; font-size: 14px;">
+                            Professional security solutions tailored to your needs.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links-->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-heading" style="padding-left: 1.8rem;">Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="about_tycoon.html">About Tycoon Security</a></li>
+                            <li><a href="#">Security Services</a></li>
+                            <li><a href="#">OHS Services</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Our Services -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-heading" style="padding-left: 1.8rem;">Our Services</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Security Services</a></li>
+                            <li><a href="#">Surveillance & Technology</a></li>
+                            <li><a href="#">Specialized Operations</a></li>
+                            <li><a href="#">Facility Maintanence & Cleaning</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact Us -->
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-heading">Contact Us</h5>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone-alt"></i> 072 535 3624</p>
+                            <p><i class="fas fa-envelope"></i> thembela@tycoonsecurity.co.za</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 20 Bokmakierie Crescent,<br>Douglasdale, 2191</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom text-center">
+                    <p>&copy; 2026 Tycoon Security, Janitorial & Medical Solutios | All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BOOTSTRAP CDN SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script src="scripts/careers.js"></script>
+    </body>
 
 </html>
