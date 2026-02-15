@@ -83,6 +83,19 @@ h2 {
     color: var(--text-color);
     padding: 2rem;
     text-align: center;
+} 
+.navbar {
+    position: relative;
+    z-index: 1030 !important;
+}
+
+.dropdown-menu {
+    background: #1F5A8A;
+    z-index: 1040 !important;
+}
+
+.dropdown-menu li a{
+    color: var(--text-color);
 }
 
 .contact-icon {
@@ -107,6 +120,10 @@ h2 {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.social-icons {
+    font-size: 1.2rem;
 }
 
 footer {
