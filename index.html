@@ -613,8 +613,16 @@
 
             </div>
         </div>
-    </section><br>
-
+    </section>
+    
+<!-- Back To Top Button -->
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__circle" stroke="#c49a2b" stroke-width="3" fill="transparent" r="22" cx="25"
+                cy="25" />
+        </svg>
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -691,7 +699,51 @@
             once: true,
             offset: 50
         });
+
+        document.getElementById('whatWeDoBtn').addEventListener('click', function () {
+            document.getElementById('services-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('enquiriesBtn').addEventListener('click', function () {
+            document.getElementById('contact-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        const backToTopBtn = document.getElementById('backToTop');
+        const circle = document.querySelector('.progress-ring__circle');
+        const circumference = 2 * Math.PI * 22; // 138.23
+
+        window.addEventListener('scroll', function () {
+            const scrollPosition = window.scrollY;
+            const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = scrollPosition / pageHeight;
+
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+
+            // Update progress ring
+            const offset = circumference - (scrollPercentage * circumference);
+            circle.style.strokeDashoffset = offset;
+        });
+
+        backToTopBtn.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Initialize
+        circle.style.strokeDasharray = circumference;
+        circle.style.strokeDashoffset = circumference;
     </script>
 </body>
+
 
 </html>
