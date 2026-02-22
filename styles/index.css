@@ -4,6 +4,7 @@
     --tertiary-color: #55585C;
     --text-color: #FFF;
 }
+
 /* Animations */
 [data-aos] {
     pointer-events: none;
@@ -18,6 +19,7 @@
     font-size: 1.7rem;
     font-weight: bold;
 }
+
 .hero-container {
     background-image: url("https://acessecurity.co.za/");
     background-size: cover;
@@ -32,6 +34,7 @@
     color: var(--tertiary-color);
     text-align: left;
 }
+
 .intro {
     margin-left: 8.8rem;
 }
@@ -40,9 +43,11 @@
     .intro {
         margin-left: 0;
     }
+
     .hero-para {
         margin-left: 0;
     }
+
     .hero-img {
         display: none;
     }
@@ -131,13 +136,18 @@
 }
 
 .service-tabs .nav-link.active {
-    color: var(--primary-color);
+    /* color: var(--primary-color);
     background: transparent;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color); */
+
+    background-color: #1F5A8A;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    color: #e9e2e2;
 }
 
 .service-tabs .nav-link:hover {
-    color: var(--primary-color);
+    color: #2b2929;
     border-bottom: 2px solid var(--primary-color);
 }
 
